@@ -1,0 +1,63 @@
+.contact {
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(80, 200, 220, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 48% 40%,
+      #2f8f96 0%,
+      #1a6a6e 0%,
+      #0d3a40 55%,
+      #071c20 80%,
+      #030a0d 100%
+    );
+  filter: saturate(120%) contrast(105%);
+}
+
+.title {
+  color: #ffffff;
+}
+
+.highlight {
+  color: #50c8dc;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background: rgba(80, 200, 220, 0.05);
+  border: 1px solid rgba(80, 200, 220, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 50px;
+  background: rgba(80, 200, 220, 0.06);
+  border: 1px solid rgba(80, 200, 220, 0.25);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contactLink:hover {
+  background: rgba(80, 200, 220, 0.15);
+  border-color: rgba(80, 200, 220, 0.5);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(80, 200, 220, 0.15);
+}
+
+.icon {
+  color: #50c8dc;
+}

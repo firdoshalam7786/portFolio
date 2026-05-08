@@ -1,0 +1,60 @@
+.about {
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(80, 200, 220, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 48% 40%,
+      #2f8f96 0%,
+      #1a6a6e 0%,
+      #0d3a40 55%,
+      #071c20 80%,
+      #030a0d 100%
+    );
+  filter: saturate(120%) contrast(105%);
+}
+
+.title {
+  color: #ffffff;
+}
+
+.highlight {
+  color: #50c8dc;
+}
+
+.bio {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.approachTitle {
+  color: rgba(80, 200, 220, 0.85);
+}
+
+.card {
+  background: rgba(80, 200, 220, 0.05);
+  border: 1px solid rgba(80, 200, 220, 0.15);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(80, 200, 220, 0.4);
+  background: rgba(80, 200, 220, 0.1);
+  box-shadow: 0 0 20px rgba(80, 200, 220, 0.1);
+}
+
+.number {
+  background: rgba(80, 200, 220, 0.15);
+  color: #50c8dc;
+  border: 1px solid rgba(80, 200, 220, 0.3);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-width: 36px;
+  text-align: center;
+}
+
+.cardText {
+  color: rgba(249, 244, 244, 0.7);
+}
