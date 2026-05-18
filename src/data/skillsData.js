@@ -2,21 +2,28 @@ export const skillsData = [
   {
     id: 1,
     title: "Core Skills",
-    items: ["UI/UX Layout", "Frontend Dev", "Responsive Web Design", "Component-Based Design"],
+    items: [
+      "Frontend Development",
+      "Backend Development",
+      "Responsive Web Design",
+      "API Integration",
+      "Component-Based UI",
+      "Problem Solving",
+    ],
   },
   {
     id: 2,
     title: "Frontend Tech",
-    items: ["HTML", "CSS", "JavaScript", "React"],
+    items: ["HTML", "CSS", "JavaScript", "React","Tailwind CSS","Bootstrap"],
   },
   {
     id: 3,
-    title: "Design Tools",
-    items: ["Figma", "Photoshop", "Illustrator"],
+    title: "Backend Tech & Database",
+    items: ["Node.js", "Express.js","MongoDB","Firebase"],
   },
   {
     id: 4,
-    title: "Tools & Interaction",
-    items: ["GitHub", "Netlify", "GSAP", "UI Interactions"],
+    title: "Tools & Deployment",
+    items: ["Git" ,"GitHub", "Vercel", "Render", "Postman"],
   },
 ];

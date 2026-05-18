@@ -50,7 +50,7 @@ function Contact({ data }) {
               GitHub
             </a>
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   );

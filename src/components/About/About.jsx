@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-
+ 
 function About({ data }) {
   return (
     <section id="about" className={`${styles.about} min-h-screen flex items-center py-4 text-white`}>
@@ -18,7 +18,7 @@ function About({ data }) {
 
         {/* Approach Title */}
         <h3 className={`${styles.approachTitle} text-2xl md:text-3xl font-semibold text-center mt-8 mb-10`}>
-          My Approach
+          My <span className={styles.highlight}>Approach</span> 
         </h3>
 
         {/* Cards */}
