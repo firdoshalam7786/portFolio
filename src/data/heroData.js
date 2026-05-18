@@ -5,7 +5,7 @@ export const heroData = {
   intro:
     "I craft fast, modern web experiences from frontend to backend. Whether it's a pixel-perfect UI or a secure REST API — I build it clean, I build it right.",
   resume: "Firdosh_Alam_FullStackDeveloper_Resume.pdf",
-  image: "/profile.png",
+  image: "./src/assets/profile.png",
   socials: [
     {
       id: 1,
