@@ -1,3 +1,5 @@
+import profile from "../assets/profile.png"
+
 export const heroData = {
   greeting: "I am Firdosh Alam",
   name: "Firdosh Alam",
@@ -5,7 +7,7 @@ export const heroData = {
   intro:
     "I craft fast, modern web experiences from frontend to backend. Whether it's a pixel-perfect UI or a secure REST API — I build it clean, I build it right.",
   resume: "Firdosh_Alam_FullStackDeveloper_Resume.pdf",
-  image: "./src/assets/profile.png",
+  image: profile,
   socials: [
     {
       id: 1,

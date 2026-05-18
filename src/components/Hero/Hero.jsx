@@ -66,7 +66,7 @@ function Hero({ data }) {
         {/* Right Content Image */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="./src/assets/profile.png"
+            src={data.image}
             alt="profile"
             className="w-40 sm:w-52 md:w-60 lg:w-72 object-cover"
           />
