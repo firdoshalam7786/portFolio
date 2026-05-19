@@ -5,6 +5,17 @@ import styles from "./Navbar.module.css";
 function Navbar() {
   const [active, setActive] = useState("Home");
   const links = ["Home", "About", "Skills", "Projects", "Contact"];
+const handleScroll = (item) => {
+  setActive(item);
+  if (item === "Home") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const section = document.getElementById(item.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+};
 
   return (
     <motion.header
@@ -14,25 +25,25 @@ function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <nav className="flex items-center justify-between max-w-6xl mx-auto px-3 md:px-6 py-4">
-
         {/* Logo */}
-        <div className="w-10 h-10 md:w-20 md:h-20 flex items-center justify-center rounded-full text-white font-bold text-sm md:text-base"
-  style={{
-    color:"#f2f0ef",
-    background: "rgba(80, 200, 220, 0.12)",
-    border: "1px solid rgba(80, 200, 220, 0.3)",
-    boxShadow: "0 0 12px rgba(80, 200, 220, 0.2)"
-  }}
->
-  FA
-</div>
+        <div
+          className="w-10 h-10 md:w-20 md:h-20 flex items-center justify-center rounded-full text-white font-bold text-sm md:text-base"
+          style={{
+            color: "#f2f0ef",
+            background: "rgba(80, 200, 220, 0.12)",
+            border: "1px solid rgba(80, 200, 220, 0.3)",
+            boxShadow: "0 0 12px rgba(80, 200, 220, 0.2)",
+          }}
+        >
+          FA
+        </div>
 
         {/* Nav Links*/}
         <ul className={`${styles.navLink} flex`}>
           {links.map((item) => (
             <li
               key={item}
-              onClick={() => setActive(item)}
+              onClick={() => handleScroll(item)}
               className={`${styles.navItems} ${active === item ? styles.active : ""}`}
             >
               {active === item && (
@@ -48,18 +59,17 @@ function Navbar() {
         </ul>
 
         {/* Button */}
-       <button
-  style={{
-    color:"#f2f0ef",
-    background: "rgba(80, 200, 220, 0.06)",
-    border: "1px solid rgba(80, 200, 220, 0.4)",
-    boxShadow: "0 0 12px rgba(80, 200, 220, 0.2)"
-  }}
-  className="text-white px-3 py-2 md:px-6 md:py-6 rounded-full transition text-xs md:text-base whitespace-nowrap hover:opacity-90"
->
-  Let's Talk
-</button>
-
+        <button
+          style={{
+            color: "#f2f0ef",
+            background: "rgba(80, 200, 220, 0.06)",
+            border: "1px solid rgba(80, 200, 220, 0.4)",
+            boxShadow: "0 0 12px rgba(80, 200, 220, 0.2)",
+          }}
+          className="text-white px-3 py-2 md:px-6 md:py-6 rounded-full transition text-xs md:text-base whitespace-nowrap hover:opacity-90"
+        >
+          Let's Talk
+        </button>
       </nav>
     </motion.header>
   );
