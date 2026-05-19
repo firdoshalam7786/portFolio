@@ -6,7 +6,7 @@ export const heroData = {
   role: "Full Stack Web Developer",
   intro:
     "I craft fast, modern web experiences from frontend to backend. Whether it's a pixel-perfect UI or a secure REST API — I build it clean, I build it right.",
-  resume: "Firdosh_Alam_FullStackDeveloper_Resume.pdf",
+  resume: "Firdosh_Alam_Full_Stack_Web_Developer_Resume.pdf",
   image: profile,
   socials: [
     {
@@ -18,6 +18,11 @@ export const heroData = {
       id: 2,
       label: "GitHub",
       url: "https://github.com/firdoshalam7786",
+    },
+    {
+      id: 3,
+      label: "NamasteDev",
+      url: "https://namastedev.com/firdoshalam7996",
     },
   ],
 };

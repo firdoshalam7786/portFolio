@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 function Contact({ data }) {
@@ -24,7 +24,7 @@ function Contact({ data }) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             {/* Email */}
             <a href={`mailto:${data.email}`} className={styles.contactLink}>
-              <FaEnvelope className={styles.icon} size={16} />
+              <FaEnvelope className={styles.icon} size={18} />
               {data.email}
             </a>
 
@@ -35,7 +35,7 @@ function Contact({ data }) {
               target="_blank"
               className={styles.contactLink}
             >
-              <FaLinkedin className={styles.icon} size={16} />
+              <FaLinkedin className={styles.icon} size={18} />
               LinkedIn
             </a>
 
@@ -46,8 +46,17 @@ function Contact({ data }) {
               target="_blank"
               className={styles.contactLink}
             >
-              <FaGithub className={styles.icon} size={16} />
+              <FaGithub className={styles.icon} size={18} />
               GitHub
+            </a>
+            <a
+              href={data.NamasteDev}
+              rel="noreferrer"
+              target="_blank"
+              className={styles.contactLink}
+            >
+              <FaCode className={styles.icon} size={18} />
+              NamasteDev.com
             </a>
           </div>
         </div> 

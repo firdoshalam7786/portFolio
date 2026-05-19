@@ -1,10 +1,11 @@
 import React from "react";
-import { FaLinkedin, FaGithub,FaDownload } from "react-icons/fa";
+import { FaLinkedin, FaGithub,FaDownload, FaCode } from "react-icons/fa";
 import styles from "./Hero.module.css";
 
 const iconMap = {
   LinkedIn: <FaLinkedin size={24} />,
   GitHub: <FaGithub size={24} />,
+  NamasteDev: <FaCode size={24} />,
 };
 
 function Hero({ data }) {
