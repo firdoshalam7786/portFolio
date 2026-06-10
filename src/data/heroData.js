@@ -6,7 +6,7 @@ export const heroData = {
   role: "Full Stack Web Developer",
   intro:
     "I craft fast, modern web experiences from frontend to backend. Whether it's a pixel-perfect UI or a secure REST API — I build it clean, I build it right.",
-  resume: "Firdosh_Alam_Full_Stack_Web_Developer_Resume.pdf",
+  resume: "Firdosh_Alam_Full_Stack_Developer.pdf",
   image: profile,
   socials: [
     {
